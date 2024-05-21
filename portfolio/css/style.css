@@ -17,6 +17,13 @@ img {
 /*--------------------------------
 レイアウト
 ---------------------------------*/
+.pos {
+  background-color: yellow;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
+
 .wrapper {
   padding-top: 73px;
 }
@@ -25,7 +32,7 @@ img {
   padding: 90px 0;
 }
 
-.section:nth-child(even){
+.section:nth-child(even) {
   background-color: #f7f7f7;
 }
 
@@ -278,7 +285,6 @@ Works
   /* box-shadowで外枠を */
 }
 
-
 .btn-box:hover {
   border: 2px solid transparent;
   color: #000;
@@ -376,26 +382,31 @@ td {
 /*--------------------------------
 Photo
 ---------------------------------*/
-Photo-content {
-  max-width: 320px;
-  height: 200px;
+.Photo-content {
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
-  justify-content: right;
+  flex-direction: row;
+  list-style: none;
+  justify-content: center;
+}
+
+.photo img {
+  width: 400px;
+  height: 250px;
+  object-fit: cover;
 }
 
 @media screen and (max-width: 780px) {
   .flex-container {
     flex-direction: column;
-    }
+  }
 }
 
 /*
 Form
 */
 
-.contact-form{
+.contact-form {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -403,31 +414,31 @@ Form
   margin: 0 auto;
 }
 
-.form-title{
+.form-title {
   margin-bottom: 2px;
-  font-size:1.2rem;
+  font-size: 1.2rem;
 }
 
-.contact-item input{
+.contact-item input {
   padding: 5px;
   border-radius: 5px;
-  border: 1px solid #CCC;
-  width: 50%;
+  border: 1px solid #ccc;
+  width: 100%;
 }
 
-.contact-item select{
+.contact-item select {
   padding: 5px;
   border-radius: 5px;
-  border: 1px solid #CCC;
-  width: 50%;
+  border: 1px solid #ccc;
+  width: 100%;
 }
 
-.contact-item textarea{
+.contact-item textarea {
   padding: 5px;
   border-radius: 5px;
-  border: 1px solid #CCC;
+  border: 1px solid #ccc;
   height: 100px;
-  width: 50%;
+  width: 100%;
 }
 
 .must {
@@ -437,10 +448,10 @@ Form
   background-color: red;
   color: #fff;
   border-radius: 5px;
-  border: 1px solid #CCC;
+  border: 1px solid #ccc;
 }
 
-.btn{
+.btn {
   width: 100%;
   padding: 10px 50px;
   background-color: #7f6666;

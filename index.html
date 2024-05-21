@@ -9,19 +9,26 @@
   </head>
 
   <body>
+    <div class="pos">
+      <img src="portfolio/img/org_profile.png"/>
+    </div>
+
+
     <div class="wrapper">
       <!-- header -->
       <header class="header">
-        <div class="inner">
+        <div class="inner js-page-top">
           <h1 class="header-logo">
-            <a href=".">Takadoi_Haruki</a>
+            <a>Takadoi_Haruki</a>
           </h1>
           <nav class="headerheader-nav">
             <ul class="header-nav-list">
               <li class="header-nav-item"><a href="#works">WORKS</a></li>
               <li class="header-nav-item"><a href="#About">ABOUT</a></li>
               <li class="header-nav-item"><a href="#skill">SKILL</a></li>
+              <li class="header-nav-item"><a href="sub.html">SUB</a></li>
               <li class="header-nav-item"><a href="#photo">PHOTO</a></li>
+              <li class="header-nav-item"><a href="#contact">CONTACT</a></li>
             </ul>
           </nav>
         </div>
@@ -86,7 +93,7 @@
         <!-- /works -->
 
         <!-- about -->
-        <section class="about-content" id="About">
+        <section class="about-content section" id="About">
           <div class="inner">
             <h2 class="title">ABOUT</h2>
             <table>
@@ -190,55 +197,68 @@
         </section>
         <!-- /skill -->
         <!-- photo -->
-        <section class="photo-content" id="PHOTO">
-          <div class="inner"></div>
-          <h2>PHOTO</h2>
-          <ul>
-            <li class="Photo-content">
-              <img src="2.ensyu\img\0115RFKR5_TP_V4.jpg" alt="" />
-              <img src="2.ensyu\img\FK+_50A6684_TP_V4.jpg" alt="" />
-              <img src="2.ensyu\img\KAR77_kawariyukuiroai20121125122020_TP_V4.jpg" alt="" />
-              <img src="2.ensyu\img\KAZU_DSCF5218_TP_V4.jpg" alt="" />
-              <img src="2.ensyu\img\KM19814287_TP_V4.jpg" alt="" />
-              <img src="2.ensyu\img\kumaki20960090589_TP_V4.jpg" alt="" />
-            </li>
-          </ul>
+        <section class="section" id="photo">
+          <div class="inner">
+            <h2 class="title">PHOTO</h2>
+            <ul>
+              <li class="Photo-content">
+                <div class="photo">
+                  <img src="2.ensyu\img\0115RFKR5_TP_V4.jpg" alt="" />
+                </div>
+                <div class="photo">
+                  <img src="2.ensyu\img\FK+_50A6684_TP_V4.jpg" alt="" />
+                </div>
+                <div class="photo">
+                  <img src="2.ensyu\img\KAR77_kawariyukuiroai20121125122020_TP_V4.jpg" alt="" />
+                </div>
+                <div class="photo">
+                  <img src="2.ensyu\img\KAZU_DSCF5218_TP_V4.jpg" alt="" />
+                </div>
+                <div class="photo">
+                  <img src="2.ensyu\img\KM19814287_TP_V4.jpg" alt="" />
+                </div>
+                <div class="photo">
+                  <img src="2.ensyu\img\kumaki20960090589_TP_V4.jpg" alt="" />
+                </div>
+              </li>
+            </ul>
+          </div>
         </section>
         <!-- /photo -->
-        <section class="contact-form" id="CONTACT">
-          <form action="#">
-            <div class="contact-form">
-              <div class="contact-item">
-                <p class="form-title">お名前<span class="must">必須</span></p>
-                <input type="text" name="username" />
-              </div>
-            </div>
-            <div class="contact-item">
-              <p class="form-title">メールアドレス</p><span class="must">必須</span></p>
-              <input type="email" name="mail" />
-            </div>
-          <div class="contact-item">
-            <p class="form-title">電話番号</p>
-            <input type="tel" name="tel" />
-          </div>
-          <div class="contact-item">
-            <p class="form-title">お問い合わせ<span class="must">必須</span></p>
-            <textarea name="remakes" cols="40" rows="4" maxlength="40">
-            </textarea>
-            <div class="btn-item">
-              <input class="btn" type="submit" onclick="alert('送信しました'); retutnfalse;" value="送信">
-            </div>
-          </div>
-        </form>
-      </section>
 
-    <span class="material-icons-outlined">Page Top</span>
-    <div class="page-top" id="js-page-top"></div>
-  </body>
-        </div>
-      </main>
-      <!-- footer -->
-      <footer class="footer">
+        <section class="contact-form section" id="contact">
+            <h2 class="title">CONTACT</h2>
+              <div class="contact-form">
+                <div class="contact-item">
+                  <p class="form-title">お名前<span class="must">必須</span></p>
+                  <input type="text" name="username" />
+                </div>
+                <div class="contact-item">
+                  <p class="form-title">メールアドレス<span class="must">必須</span></p>
+                  <input type="email" name="mail" />
+                </div>
+                <div class="contact-item">
+                  <p class="form-title">電話番号</p>
+                  <input type="tel" name="tel" />
+                </div>
+                <div class="contact-item">
+                  <p class="form-title">お問い合わせ<span class="must">必須</span></p>
+                  <textarea name="remakes" cols="40" rows="4" maxlength="40"></textarea>
+                  <div class="btn-item">
+                    <input class="btn" type="submit" onclick="alert('送信しました'); retutnfalse;" value="送信">
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+        </main>
+    </body>
+
+<!-- footer -->
+<footer class="footer">
+  <div class="page-top" id="js-page-top">
+  <span class="material-icons-outlined">Page Top</span>
+</div>
         <div class="copyright">&copy; HCS システムエンジニア科.</div>
       </footer>
       <!-- /footer -->
